@@ -8,8 +8,8 @@ const Navigation: React.FC<{}> = () => {
             </div>
             <div className="space-y-4">
                 <h2 className="font-bold text-indigo-500">My pins:</h2>
-                <ul className="space-y-2 italic text-gray-700">
-                    <li><Link className="p-2 rounded bg-gray-200 text-indigo-700 flex flex-row items-center" href="#"><AiFillPushpin />Folder1</Link></li>
+                <ul className="space-y-2 italic text-gray-200">
+                    <li><Link className="p-2 rounded bg-gray-600 text-indigo-400 flex flex-row items-center" href="#"><AiFillPushpin />Folder1</Link></li>
                     <li><Link className="p-2 rounded flex flex-row items-center" href="#"><AiFillPushpin />randomfile.pdf</Link></li>
                     <li><Link className="p-2 rounded flex flex-row items-center" href="#"><AiFillPushpin />brianmurder.docx</Link></li>
                     <li><Link className="p-2 rounded flex flex-row items-center" href="#"><AiFillPushpin />allo.gif</Link></li>
@@ -17,7 +17,7 @@ const Navigation: React.FC<{}> = () => {
             </div>
             <div className="space-y-4">
                 <h2 className="font-bold text-indigo-500">Settings:</h2>
-                <ul className="space-y-2">
+                <ul className="space-y-2 text-gray-200">
                     <li className="p-2 space-x-2 flex flex-row items-center"><AiOutlineUser /><h3>Account</h3></li>
                     <li className="p-2 space-x-2 flex flex-row items-center"><AiOutlineLock /><h3>Privacy</h3></li>
                     <li className="p-2 space-x-2 flex flex-row items-center"><AiOutlineInfoCircle /><h3>About</h3></li>

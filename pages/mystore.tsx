@@ -1,9 +1,10 @@
-import StoreLayout from "../components/storelayout";
+import StoreContentSubLayout from "../components/layouts/mystore/storecontentsublayout";
+import StoreLayout from "../components/layouts/mystore/storelayout";
 
 const MyStore = () => {
     return (
         <StoreLayout>
-            <h1>test</h1>
+            <StoreContentSubLayout />
         </StoreLayout>
     )
 }
