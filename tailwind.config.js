@@ -5,7 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        translateright: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(500%)' },
+        }
+      },
+      animation: {
+        translateright: 'translateright 1s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 }

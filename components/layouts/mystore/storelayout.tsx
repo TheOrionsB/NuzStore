@@ -1,6 +1,7 @@
 import Layout from 'next'
 import { PropsWithChildren } from 'react';
 import HorizontalSeparator from '../../horizontalseparator';
+import LoadingBar from '../../loadingbar';
 import Navigation from '../../navigation';
 import StoreContentSubLayout from './storecontentsublayout';
 const StoreLayout: React.FC<PropsWithChildren> = ({ children }) => {
@@ -13,6 +14,7 @@ const StoreLayout: React.FC<PropsWithChildren> = ({ children }) => {
                 <HorizontalSeparator />
                 <main className='w-[90vw]'><StoreContentSubLayout/></main>
             </div>
+            <LoadingBar/>
         </div>
     )
 }
