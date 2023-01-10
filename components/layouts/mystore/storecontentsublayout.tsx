@@ -11,12 +11,18 @@ const StoreContentSubLayout: React.FC<{}> = () => {
                     <h2 className="underline">DummyUser</h2>
                 </div>
             </div>
-            <div className="h-[5vh] p-4 flex flex-row items-baseline space-x-2 bg-indigo-700 rounded">
+            <div className="h-[5vh] p-4 flex flex-row items-baseline space-x-2 bg-indigo-900 rounded">
                 <AiOutlineArrowLeft className="text-indigo-100 font-bold" />
                 <h1 className="text-3xl text-indigo-100 font-bold">Folder1</h1>
-                <h3 className="text-xl text-indigo-300">Directory</h3>
+                <h3 className="text-xl text-indigo-300">(MyStore {'>'} Documents {'>'} Folder1)</h3>
             </div>
             <div className="h-[80vh] flex flex-col overflow-y-scroll bg-slate-700 rounded">
+                <div className="flex flex-row px-8 pt-6 pb-2 justify-between text-indigo-100">
+                    <h2>Name</h2>
+                    <h2>Type</h2>
+                    <h2>Date</h2>
+                    <h2>Actions</h2>
+                </div>
                 <ul className="p-4 space-y-2 ">
                     <li><ItemEntry name={"File1.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={1}/></li>
                     <li><ItemEntry name={"File2.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={2}/></li>

@@ -12,9 +12,10 @@ const StoreLayout: React.FC<PropsWithChildren> = ({ children }) => {
                     <Navigation />
                 </div>
                 <HorizontalSeparator />
-                <main className='w-[90vw]'><StoreContentSubLayout/></main>
+                <main className='w-[90vw] z-10'><StoreContentSubLayout/></main>
             </div>
-            <LoadingBar/>
+            <div className='overflow-y-hidden animate-pulse h-full w-5/6 left-[50%] translate-x-[-50%] rounded-full bg-gradient-to-l from-indigo-600 to-purple-400 blur-3xl fixed -bottom-[102%]'></div>
+            {/* <LoadingBar/> */}
         </div>
     )
 }
