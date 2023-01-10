@@ -7,15 +7,14 @@ import StoreContentSubLayout from './storecontentsublayout';
 const StoreLayout: React.FC<PropsWithChildren> = ({ children }) => {
     return (
         <div className='py-5 w-screen h-screen text-2xl bg-slate-800'>
-            <div className="flex h-full flex-row">
+            <div className="flex h-full flex-row divide-x-2 divide-gray-600">
                 <div className='w-[10vw] flex flex-row'>
                     <Navigation />
                 </div>
-                <HorizontalSeparator />
                 <main className='w-[90vw] z-10'><StoreContentSubLayout/></main>
             </div>
-            <div className='overflow-y-hidden animate-pulse h-full w-5/6 left-[50%] translate-x-[-50%] rounded-full bg-gradient-to-l from-indigo-600 to-purple-400 blur-3xl fixed -bottom-[102%]'></div>
-            {/* <LoadingBar/> */}
+            <div className='overflow-y-hidden h-full w-5/6 left-[50%] translate-x-[-50%] rounded-full bg-gradient-to-l from-indigo-600 to-purple-400 blur-3xl fixed -bottom-[102%]'></div>
+            <LoadingBar/>
         </div>
     )
 }
