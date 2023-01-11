@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'sidebarbp': '2290px',
+    },
     extend: {
       keyframes: {
         translateright: {
