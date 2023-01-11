@@ -1,5 +1,8 @@
 import { AiOutlineArrowLeft, AiOutlineFile, AiOutlineUser } from "react-icons/ai";
+import DirectoryHeader from "../../directoryheader";
 import ItemEntry from "../../itementry";
+import DirectoryHeaderPlaceholder from "../../placeholders/directoryheaderplaceholder";
+import ItemEntryPlaceholder from "../../placeholders/itementryplaceholder";
 
 const StoreContentSubLayout: React.FC<{}> = () => {
     return (
@@ -11,11 +14,8 @@ const StoreContentSubLayout: React.FC<{}> = () => {
                     <h2 className="underline">DummyUser</h2>
                 </div>
             </div>
-            <div className="h-[5vh] p-2 flex flex-row items-center space-x-2 bg-gradient-to-r from-indigo-800 to-purple-700 rounded">
-                <AiOutlineArrowLeft className="text-indigo-100 font-bold" />
-                <h1 className="text-3xl text-indigo-100 font-bold">Folder1</h1>
-                <h3 className="text-xl text-indigo-300">(MyStore {'>'} Documents {'>'} Folder1)</h3>
-            </div>
+            <DirectoryHeader/>
+            {/* <DirectoryHeaderPlaceholder/> */}
             <div className="h-[80vh] flex flex-col overflow-y-scroll bg-slate-700 rounded">
                 <div className="flex flex-row px-8 pt-6 pb-2 justify-between text-indigo-100">
                     <h2>Name</h2>
@@ -24,9 +24,14 @@ const StoreContentSubLayout: React.FC<{}> = () => {
                     <h2>Actions</h2>
                 </div>
                 <ul className="p-4 space-y-2 ">
-                    <li><ItemEntry name={"File1.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={1}/></li>
-                    <li><ItemEntry name={"File2.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={2}/></li>
+                    <li><ItemEntry name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={1}/></li>
+                    <li><ItemEntry name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={2}/></li>
                     <li><ItemEntry name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={3}/></li>
+                    <li><ItemEntry name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={4}/></li>
+                    {/* <li><ItemEntryPlaceholder name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={1}/></li> */}
+                    {/* <li><ItemEntryPlaceholder name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={2}/></li> */}
+                    {/* <li><ItemEntryPlaceholder name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={3}/></li> */}
+                    {/* <li><ItemEntryPlaceholder name={"File3.txt"} type={"Text file"} uploadDate={new Date()} owner={"DummyUser"} key={4}/></li> */}
                 </ul>
             </div>
         </div>

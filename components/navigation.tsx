@@ -9,6 +9,10 @@ const Navigation: React.FC<{}> = () => {
             <div className="space-y-4">
                 <h2 className="font-bold text-indigo-500">My pins:</h2>
                 <ul className="space-y-2 italic text-gray-200">
+                    {/* <li><Link className="p-2 rounded animate-pulse w-full bg-gray-600 text-indigo-400 flex flex-row items-center" href="#"><AiFillPushpin /></Link></li>
+                    <li><Link className="p-2 rounded animate-pulse w-full flex flex-row items-center" href="#"><AiFillPushpin /></Link></li>
+                    <li><Link className="p-2 rounded animate-pulse w-full flex flex-row items-center" href="#"><AiFillPushpin /></Link></li>
+                    <li><Link className="p-2 rounded animate-pulse w-full flex flex-row items-center" href="#"><AiFillPushpin /></Link></li> */}
                     <li><Link className="p-2 rounded bg-gray-600 text-indigo-400 flex flex-row items-center" href="#"><AiFillPushpin />Folder1</Link></li>
                     <li><Link className="p-2 rounded flex flex-row items-center" href="#"><AiFillPushpin />randomfile.pdf</Link></li>
                     <li><Link className="p-2 rounded flex flex-row items-center" href="#"><AiFillPushpin />brianmurder.docx</Link></li>

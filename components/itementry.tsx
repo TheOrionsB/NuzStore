@@ -2,7 +2,7 @@ import { AiOutlineDelete, AiOutlineDownload, AiOutlineFile, AiOutlineLock } from
 
 const ItemEntry: React.FC<{ name: String, type: String, uploadDate: Date, owner: String }> = ({ name, type, uploadDate }) => {
     return (
-        <div className="flex flex-row justify-between items-center bg-gray-800 p-4 rounded text-indigo-200">
+        <div className="flex flex-row justify-between items-center h-16 bg-gray-800 p-4 rounded text-indigo-200">
             <div className="flex flex-row space-x-2 items-center">
                 <AiOutlineFile />
                 <h3 className="text-2xl text-indigo-100">{name}</h3>
