@@ -1,12 +1,13 @@
-import StoreContentSubLayout from "../components/layouts/mystore/storecontentsublayout";
-import StoreLayout from "../components/layouts/mystore/storelayout";
+import React from 'react';
+import StoreContentSubLayout from '../components/layouts/mystore/storecontentsublayout';
+import StoreLayout from '../components/layouts/mystore/storelayout';
 
-const MyStore = () => {
+function MyStore() {
     return (
         <StoreLayout>
             <StoreContentSubLayout />
         </StoreLayout>
-    )
+    );
 }
 
 export default MyStore;

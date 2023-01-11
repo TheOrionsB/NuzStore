@@ -1,6 +1,18 @@
-import { AiOutlineDelete, AiOutlineDownload, AiOutlineFile, AiOutlineLock } from "react-icons/ai";
+import React from 'react';
+import {
+    AiOutlineDelete,
+    AiOutlineDownload,
+    AiOutlineFile,
+    AiOutlineLock,
+} from 'react-icons/ai';
 
-const ItemEntry: React.FC<{ name: String, type: String, uploadDate: Date, owner: String }> = ({ name, type, uploadDate }) => {
+interface ItemEntryProps {
+    name: string;
+    type: string;
+    uploadDate: Date;
+}
+function ItemEntry(props: ItemEntryProps) {
+    const { name, type, uploadDate } = props;
     return (
         <div className="flex flex-row justify-between items-center h-16 bg-gray-800 p-4 rounded text-indigo-200">
             <div className="flex flex-row space-x-2 items-center">
@@ -10,11 +22,11 @@ const ItemEntry: React.FC<{ name: String, type: String, uploadDate: Date, owner:
             <p>{type}</p>
             <p>{uploadDate.toLocaleDateString()}</p>
             <div className="flex flex-row space-x-2 items-center">
-                <AiOutlineDownload/>
-                <AiOutlineDelete/>
-                <AiOutlineLock/>
+                <AiOutlineDownload />
+                <AiOutlineDelete />
+                <AiOutlineLock />
             </div>
         </div>
-    )
+    );
 }
 export default ItemEntry;
